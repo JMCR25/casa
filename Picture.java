@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square floor;
+    private Person jambo;
 
     /**
      * Constructor for objects of class Picture
@@ -96,5 +97,10 @@ public class Picture
     
     public void atardecer()
     {sun.slowMoveVertical(130);
+        jambo = new Person();
+        jambo.moveHorizontal(-310);
+        jambo.moveVertical(30);
+        jambo.makeVisible();
+        jambo.slowMoveHorizontal(170);
     }
 }
